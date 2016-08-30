@@ -13,10 +13,10 @@ integrations:
   hub:
     - integrationName: "dh-manishas"
       type: docker
-#  notifications:
-#    - integrationName: "triggerPipelinesDemo"
-#      type: webhook
-#      payload:
-#        - versionName=$BRANCH.$BUILD_NUMBER
-#      on_success: always
-#      on_failure: never
+  notifications:
+    - integrationName: "demoInt"
+      type: webhook
+      payload:
+        - versionName=$BRANCH.$BUILD_NUMBER
+      on_success: always
+      on_failure: never
